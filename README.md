@@ -12,21 +12,25 @@
 
 ## 🖼️ 예시 프레임 (AR 렌더링)
 
-<p align="center">
-  <img src="https://github.com/your-username/camera-pose-ar/assets/sample_frame.png" width="500" alt="AR Cylinder on Chessboard">
-</p>
+> 이미지 캡처가 있다면 아래와 같이 삽입할 수 있습니다:
+>
+> `<img src="your-image-path.png" width="500">`
 
 ## 📹 시연 영상
 
-### 🎯 AR 데모 영상
+### 🎯 AR 콜라캔 시연
 
-➡️ [**AR 콜라캔 시연 영상 보기**](https://youtu.be/_mwHEp7jV58)
+[![AR Demo Video](https://img.youtube.com/vi/_mwHEp7jV58/0.jpg)](https://youtu.be/_mwHEp7jV58)
+
+➡️ [**AR 콜라캔 데모 영상 보기**](https://youtu.be/_mwHEp7jV58)
 
 > 실제 체스보드를 기반으로 실시간 포즈 추정과 가상 물체가 렌더링되는 모습을 확인할 수 있습니다.
 
-### 🛠️ 카메라 보정 영상
+### 🛠️ 카메라 보정(내부 파라미터 얻기) 과정
 
-➡️ [**카메라 캘리브레이션 영상 보기**](https://youtu.be/j1Sv2sFp-LA)
+[![Calibration Video](https://img.youtube.com/vi/j1Sv2sFp-LA/0.jpg)](https://youtu.be/j1Sv2sFp-LA)
+
+➡️ [**카메라 캘리브레이션 과정 보기**](https://youtu.be/j1Sv2sFp-LA)
 
 > 아래의 `K`와 `dist_coeff`는 OpenCV의 `cv.calibrateCamera()`를 통해 얻은 결과입니다:
 
@@ -34,4 +38,4 @@
 K = np.array([[631.12372751, 0, 204.13870644],
               [0, 626.76168609, 363.15842532],
               [0, 0, 1]])
-dist_coeff = np.array([0.03184266, -0.26914475, -0.00107398, 0_
+dist_coeff = np.array([0.03184266, -0.26914475, -0.00107398, 0.00244667, 0.73158658])
